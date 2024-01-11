@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Sora:wght@500&display=swap');
+
+*{
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("1.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 30%;
+    height: auto;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 15px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > .title{
+    color: black;
+    font-family: "Sora", sans-serif;
+    font-size: 30px;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.container > .emailInput, .container > .passwordInput{
+    width: 80%;
+    height: 50px;
+    background-color: rgba(255,255,255,0.75);
+    border-radius: 25px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.emailInput > i, .passwordInput > i{
+    color: #505050;
+    font-size: 22px;
+    margin: 0 1rem;
+}
+
+.emailInput > input, .passwordInput > input{
+    color: black;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 13px;
+}
+
+.emailInput > input::placeholder, .passwordInput > input::placeholder{
+    color: #505050;
+}
+
+.container > .forgotBtn{
+    color: black;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 13px;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.container > .forgotBtn:hover{
+    text-decoration: underline;
+    user-select: none;
+}
+
+.container > .loginBtn{
+    color: #FFFFFF;
+    background: black;
+    width: 80%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background-color 100ms ease-in-out 0s;
+}
+
+.container > .loginBtn:hover{
+    background-color: rgba(0,0,0,0.85);
+}
+
+.container > .createAccText{
+    color: black;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 13px;
+    margin: 1rem 0;
+}
+
+.createAccText > .createBtn{
+    color: blue;
+}
+
+.createAccText > .createBtn:hover{
+    text-decoration: underline;
+    user-select: none;
+}
+
+/* For Tablet View*/
+
+@media only screen and (max-width: 820px) {
+    .container{
+        width: 50%;
+    }
+}
+
+/* For Mobile View*/
+
+@media only screen and (max-width: 425px){
+    .container{
+        width: 85%;
+    }
+}
